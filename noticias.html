@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head><title>Noticias</title></head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Noticias - Escuela Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h2>Centro de Noticias</h2>
-    <textarea placeholder="Escribir noticia..."></textarea><br>
-    <button>Publicar</button>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">TECNICA<span></span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="materias.html">Materias</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="noticias.html" class="active">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="editor-section">
+            <h2>Centro de Noticias</h2>
+            <p class="subtitle">Noticias de la institucion</p>
+            
+            <textarea placeholder="Escribe el cuerpo de la noticia aquí..."></textarea>
+            <br>
+            <button class="btn-publicar">Publicar Noticia</button>
+        </section>
+    </main>
+
 </body>
 </html>
