@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html>
-<head><title>Panel</title></head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Institucional | Panel Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h2>Panel Principal</h2>
-    <ul>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="materias.html">Materias</a></li>
-        <li><a href="notas.html">Notas</a></li>
-        <li><a href="horarios.html">Horarios</a></li>
-    </ul>
+
+    <header class="navbar">
+        <div class="logo">INSTITUCIÓN <span>EDUCATIVA</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Secretaría</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <header class="section-header">
+            <span class="breadcrumb">Inicio > Panel de Usuario</span>
+            <h1>SISTEMA DE GESTIÓN ACADÉMICA</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Comunicado Oficial: Ciclo 2026</h2>
+                <p>Se informa a la comunidad estudiantil que los procesos de reinscripción para el segundo semestre iniciarán el próximo lunes. Por favor, revise su estatus financiero antes de proceder.</p>
+                <button class="btn-primary">Leer más</button>
+            </div>
+            <div class="hero-image-placeholder">
+                <span class="img-icon">🏛️</span>
+            </div>
+        </section>
+
+        <h3 class="group-title">Servicios Disponibles</h3>
+        <ul class="panel-grid">
+            <li><a href="noticias.html" class="card">
+                <span class="card-icon">📰</span>
+                <strong>Noticias</strong>
+                <p>Boletines y eventos recientes.</p>
+            </a></li>
+            <li><a href="materias.html" class="card">
+                <span class="card-icon">📚</span>
+                <strong>Materias</strong>
+                <p>Plan de estudios y recursos.</p>
+            </a></li>
+            <li><a href="notas.html" class="card">
+                <span class="card-icon">📝</span>
+                <strong>Notas</strong>
+                <p>Calificaciones y reportes.</p>
+            </a></li>
+            <li><a href="horarios.html" class="card">
+                <span class="card-icon">🕒</span>
+                <strong>Horarios</strong>
+                <p>Cronograma de clases.</p>
+            </a></li>
+        </ul>
+
+        <section class="info-section">
+            <div class="info-block">
+                <h3>Misión Institucional</h3>
+                <p>Nuestra misión es formar líderes íntegros, capaces de enfrentar los retos globales mediante una educación basada en la investigación, la ética y la innovación tecnológica constante en nuestras aulas.</p>
+            </div>
+            <div class="info-block">
+                <h3>Avisos Recientes</h3>
+                <p>El mantenimiento programado del servidor se llevará a cabo el sábado a las 22:00. Las plataformas de tareas no estarán disponibles durante un periodo de 4 horas.</p>
+            </div>
+        </section>
+    </main>
+
+    <aside class="social-sidebar">
+        <a href="#" title="Facebook">FB</a>
+        <a href="#" title="Twitter">TW</a>
+        <a href="#" title="Instagram">IG</a>
+    </aside>
+
 </body>
 </html>
