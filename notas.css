@@ -1,0 +1,189 @@
+
+
+
+:root {
+    --azul-primario: #0056b3;
+    --azul-oscuro: #003d80;
+    --blanco: #ffffff;
+    --gris-fondo: #f8fbff; 
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    background-attachment: fixed;
+    color: #334e68;
+    min-height: 100vh;
+}
+
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); 
+    border-bottom: 2px solid var(--azul-primario);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px var(--sombra);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    color: #243b53;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--azul-primario);
+    border-bottom: 3px solid var(--azul-primario);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #486581;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--azul-primario);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--azul-primario);
+}
+
+/* --- CONTENEDOR DE CARGA DE NOTAS/NOTICIAS --- */
+.container {
+    max-width: 550px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px); /* Pequeña animación al pasar el mouse */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #102a43;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.subtitle {
+    text-align: center;
+    color: #627d98;
+    font-size: 13px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- ESTILO DE INPUTS Y FORMULARIO --- */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #334e68;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #d9e2ec;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #f0f4f8;
+    color: #243b53;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--azul-primario);
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 86, 179, 0.1);
+}
+
+/* --- BOTÓN PREMIUM --- */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, var(--azul-primario) 0%, var(--azul-oscuro) 100%);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 86, 179, 0.3);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
