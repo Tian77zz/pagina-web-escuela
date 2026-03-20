@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head><title>Notas</title></head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga de Notas - Escuela Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h2>Cargar Notas</h2>
-    Alumno: <input type="text"><br>
-    Materia: <input type="text"><br>
-    Nota: <input type="number"><br>
-    <button>Guardar</button>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">TECNICA<span></span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="materias.html">Materias</a></li>
+                <li><a href="notas.html" class="active">Notas</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <h2>Cargar Notas</h2>
+            <p class="subtitle">Registro de calificaciones académicas</p>
+            
+            <div class="form-group">
+                <label>Alumno:</label>
+                <input type="text" placeholder="Nombre completo">
+            </div>
+
+            <div class="form-group">
+                <label>Materia:</label>
+                <input type="text" placeholder="Ej: Programación">
+            </div>
+
+            <div class="form-group">
+                <label>Nota:</label>
+                <input type="number" min="1" max="10" placeholder="0-10">
+            </div>
+
+            <button class="btn-guardar">Guardar Calificación</button>
+        </section>
+    </main>
+
 </body>
 </html>
